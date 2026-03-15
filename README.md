@@ -25,13 +25,18 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+  This project is a Streamlit number guessing game where the player tries to guess a secret number within a limited number of attempts based on the selected difficulty.
+- [x] Detail which bugs you found.
+  I found that the attempts counter and debug info could get out of sync, the first submitted guess did not immediately appear in history, pressing Enter did not properly submit the guess, and the game logic could compare values incorrectly and give misleading hints.
+- [x] Explain what fixes you applied.
+  I moved the core game logic into `logic_utils.py`, fixed numeric guess comparison, corrected attempt and history updates, reset session state properly for new games and difficulty changes, and updated the Streamlit flow so the UI refreshes immediately after valid guesses.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [x] Fixed game demo completed in Streamlit.
+  In the repaired version, the game starts with the correct number of attempts for the selected difficulty, valid guesses are added to history right away, pressing Enter submits through the form, and the debug panel matches the current game state after each guess.
+  Add your screenshot of the fixed winning game here before submission if your instructor expects an image.
 
 ## 🚀 Stretch Features
 
